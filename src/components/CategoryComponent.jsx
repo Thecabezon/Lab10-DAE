@@ -1,3 +1,4 @@
+import React from 'react';
 import { useNavigate } from "react-router-dom";
 
 function CategoryComponent(props) {
@@ -19,7 +20,12 @@ function CategoryComponent(props) {
                     >
                         Editar
                     </button>
-                    <button className="btn btn-danger">Eliminar</button>
+                    <button 
+                        onClick={props.onDelete} 
+                        className="btn btn-danger"
+                    >
+                        Eliminar
+                    </button>
                 </div>
             </div>
         </div>
